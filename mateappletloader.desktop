@@ -1,0 +1,9 @@
+[Xfce Panel]
+Type=X-XFCE-PanelPlugin
+Encoding=UTF-8
+Name=MATE applet loader
+Comment=Load MATE applets
+Icon=mate
+X-XFCE-Module=mateappletloader
+X-XFCE-Internal=false
+X-XFCE-API=2.0

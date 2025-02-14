@@ -138,14 +138,12 @@ static gboolean plug_removed(XfcePanelPlugin *plugin)
 
 static void widget_resized(GtkWidget *self, GtkAllocation *allocation, gpointer)
 {
-    g_assert(g_widget == self);
-
     if (g_widget_expand_only)
     {
         gint w = 0;
         gint h = 0;
-        gtk_widget_get_size_request(g_widget, &w, &h);
-        gtk_widget_set_size_request(g_widget, max(w, allocation->width), h);
+        gtk_widget_get_size_request(self, &w, &h);
+        gtk_widget_set_size_request(self, max(w, allocation->width), h);
     }
 }
 
